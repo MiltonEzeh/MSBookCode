@@ -22,6 +22,7 @@ public class AccountController {
 		return accountService.findByName(name);
 	}
 
+	// chikere
 	@RequestMapping(path = "/current", method = RequestMethod.GET)
 	public Account getCurrentAccount(Principal principal) {
 		return accountService.findByName(principal.getName());
